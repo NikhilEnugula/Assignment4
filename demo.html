@@ -1,0 +1,65 @@
+<div class="header">
+    <div class="col-md-6 content">
+   
+    </div>
+      <div class="col-md-6 content">
+      
+       </div>   
+ </div>
+   < div class="section">
+     
+     
+ 
+     </div>
+     <div class="row">
+      
+       <ul>
+         <li class="animate-repeat" ng-repeat="item in cart | orderBy:'name'">
+           <div class="card">
+             <p><img ng-src="{{item.image}}" alt="#" /></p>
+          <h5>Item Name:{{item.name}}</h5> 
+          <p> discription:{{item.desc}}</p>
+          <p>{{item.quntity}}</p>
+          <h6> Price:{{item.price}}</h6>
+         </div>
+           <button class="btn-danger btn-xs" ng-click="removeItem(item);">Remove Item</button>
+           </br>
+           </br>
+         </li>
+       </ul>
+   
+       <button class="btn-danger" ng-click="clearCart();">Clear Cart</button>
+     </div>
+   </div>
+   </div>
+     <div class="cart">
+            <div class="row">
+              <h2>Your Cart:</h2>
+              <div class="row">
+              <div class="col-md-12">
+              <ul>
+                <li class="animate-repeat" ng-repeat="item in cart | orderBy:'name'">
+                  <div class="card row">
+                  
+                    <p ><img ng-src="{{item.image}}" alt="#" /></p>
+          
+                  
+                 <h5>Item Name:{{item.name}}</h5> 
+                 <p> discription:{{item.desc}}</p>
+                 <p>{{item.quntity}}</p>
+                 <h6> Price:{{item.price}}</h6>
+              
+                </div>
+                </div>
+                  <button class="btn-danger btn-xs" ng-click="removeItem(item);">Remove Item</button>
+                  </br>
+                  </br>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+              <button class="btn-danger" ng-click="clearCart();">Clear Cart</button>
+          </div>
+
+    </div>
